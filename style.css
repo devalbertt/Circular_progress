@@ -1,0 +1,73 @@
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.35s;
+  transform-origin: center;
+}
+
+.progress-ring__circle--progress {
+  stroke-dasharray: 326.7256359733386;
+  stroke-dashoffset: 326.7256359733386;
+  transition: stroke-dashoffset 0.35s;
+  transform-origin: center;
+}
+
+.progress-text {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.progress-percent {
+  font-weight: bold;
+}
+
+/* Adiciona estilos específicos para o progresso da barra */
+.progress.percent-10 .progress-ring__circle--progress {
+  stroke-dashoffset: 294.05207237501084;
+}
+
+.progress.percent-20 .progress-ring__circle--progress {
+  stroke-dashoffset: 261.37850877668307;
+}
+
+.progress.percent-30 .progress-ring__circle--progress {
+  stroke-dashoffset: 228.7049451783553;
+}
+
+.progress.percent-40 .progress-ring__circle--progress {
+  stroke-dashoffset: 196.03138158002753;
+}
+
+.progress.percent-50 .progress-ring__circle--progress {
+  stroke-dashoffset: 163.35781798169976;
+}
+
+.progress.percent-60 .progress-ring__circle--progress {
+  stroke-dashoffset: 130.684254383372;
+}
+
+.progress.percent-70 .progress-ring__circle--progress {
+  stroke-dashoffset: 98.01069078504423;
+}
+
+.progress.percent-80 .progress-ring__circle--progress {
+  stroke-dashoffset: 65.33712718671646;
+}
+
+.progress.percent-90 .progress-ring__circle--progress {
+  stroke-dashoffset: 32.66356358838869;
+}
+
+.progress.percent-100 .progress-ring__circle--progress {
+  stroke-dashoffset: 0;
+}
